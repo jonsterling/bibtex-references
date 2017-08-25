@@ -932,6 +932,31 @@
                   nominal sets},
 }
 
+@inproceedings{gambino-hyland:2004,
+  author =       "Gambino, Nicola and Hyland, Martin",
+  editor =       "Berardi, Stefano and Coppo, Mario and Damiani,
+                  Ferruccio",
+  title =        "Wellfounded Trees and Dependent Polynomial Functors",
+  bookTitle =    "Types for Proofs and Programs: International
+                  Workshop, TYPES 2003, Torino, Italy, April 30 - May
+                  4, 2003, Revised Selected Papers",
+  year =         2004,
+  publisher =    "Springer Berlin Heidelberg",
+  address =      "Berlin, Heidelberg",
+  pages =        "210--225",
+  abstract =     "We set out to study the consequences of the
+                  assumption of types of wellfounded trees in
+                  dependent type theories. We do so by investigating
+                  the categorical notion of wellfounded tree
+                  introduced in [16]. Our main result shows that
+                  wellfounded trees allow us to define initial
+                  algebras for a wide class of endofunctors on locally
+                  cartesian closed categories.",
+  isbn =         "978-3-540-24849-1",
+  doi =          "10.1007/978-3-540-24849-1_14",
+  url =          "https://doi.org/10.1007/978-3-540-24849-1_14"
+}
+
 @inproceedings{ghani-uustalu:2003,
   author =       {Ghani, Neil and Uustalu, Tarmo},
   title =        {Explicit Substitutions and Higher-order Syntax},
@@ -1440,6 +1465,27 @@
   institution =  {Stanford University}
 }
 
+@article{moerdijk:2000,
+  title =        "Wellfounded trees in categories",
+  journal =      "Annals of Pure and Applied Logic",
+  volume =       104,
+  number =       1,
+  pages =        "189 - 218",
+  year =         2000,
+  issn =         "0168-0072",
+  doi =          "http://dx.doi.org/10.1016/S0168-0072(00)00012-9",
+  url =
+                  "http://www.sciencedirect.com/science/article/pii/S0168007200000129",
+  author =       "Ieke Moerdijk and Erik Palmgren",
+  keywords =     "Initial algebras",
+  keywords =     "Locally cartesian closed categories",
+  keywords =     "Pretoposes",
+  keywords =     "Artin gluing",
+  keywords =     "Sheaves",
+  keywords =     "Wellfounded trees",
+  keywords =     "Martin-Löf type theory"
+}
+
 @misc{morrison-agda-prelude:2016,
   author =       {Morrison, Darin},
   title =        {\texttt{agda-prelude}: A simple prelude for {Agda}},
@@ -1587,6 +1633,17 @@
   publisher =    {ACM},
   address =      {New York, NY, USA},
   keywords =     {alpha-equivalence, binders, recursion, types},
+}
+
+@article{altenkirch-ghani-hancock-mcbride-morris:2015,
+  author    = {Thorsten Altenkirch and Neil Ghani and Peter Hancock
+                  and Conor McBride and Peter Morris},
+  title     = {Indexed containers},
+  journal   = {Journal of Functional Programming},
+  volume    = {25},
+  year      = {2015},
+  url       = {https://doi.org/10.1017/S095679681500009X},
+  doi       = {10.1017/S095679681500009X},
 }
 
 @book{pitts:2013,
@@ -1745,6 +1802,56 @@
   year =         2012
 }
 
+@inbook{sozeau:2007a,
+  author =       "Sozeau, Matthieu",
+  editor =       "Altenkirch, Thorsten and McBride, Conor",
+  title =        "Subset Coercions in Coq ",
+  bookTitle =    "Types for Proofs and Programs: International
+                  Workshop, TYPES 2006, Nottingham, UK, April 18-21,
+                  2006, Revised Selected Papers",
+  year =         2007,
+  publisher =    "Springer Berlin Heidelberg",
+  address =      "Berlin, Heidelberg",
+  pages =        "237--252",
+  abstract =     "We propose a new language for writing programs with
+                  dependent types on top of the Coq proof
+                  assistant. This language permits to establish a
+                  phase distinction between writing and proving
+                  algorithms in the Coq environment. Concretely, this
+                  means allowing to write algorithms as easily as in a
+                  practical functional programming language whilst
+                  giving them as rich a specification as desired and
+                  proving that the code meets the specification using
+                  the whole Coq proof apparatus. This is achieved by
+                  extending conversion to an equivalence which relates
+                  types and subsets based on them, a technique
+                  originating from the ``Predicate subtyping'' feature
+                  of PVS and following mathematical convention. The
+                  typing judgements can be translated to the (CIC) by
+                  means of an interpretation which inserts coercions
+                  at the appropriate places. These coercions can
+                  contain existential variables representing the
+                  propositional parts of the final term, corresponding
+                  to proof obligations (or PVS type-checking
+                  conditions). A prototype implementation of this
+                  process is integrated with the Coq environment."
+}
+
+@inproceedings{sozeau:2007b,
+  author =       {Sozeau, Matthieu},
+  title =        {Program-ing Finger Trees in Coq},
+  booktitle =    {Proceedings of the 12th ACM SIGPLAN International
+                  Conference on Functional Programming},
+  series =       {ICFP '07},
+  year =         2007,
+  isbn =         {978-1-59593-815-2},
+  location =     {Freiburg, Germany},
+  pages =        {13--24},
+  numpages =     12,
+  publisher =    {ACM},
+  address =      {New York, NY, USA},
+}
+
 @inproceedings{spitters:2010,
   author =       {Bas Spitters},
   title =        {The space of measurement outcomes as a spectrum for
@@ -1865,56 +1972,6 @@
   author =       {van Oosten, Jaap},
   year =         2008,
   publisher =    {Elsevier Science, San Diego}
-}
-
-@inbook{sozeau:2007a,
-  author =       "Sozeau, Matthieu",
-  editor =       "Altenkirch, Thorsten and McBride, Conor",
-  title =        "Subset Coercions in Coq ",
-  bookTitle =    "Types for Proofs and Programs: International
-                  Workshop, TYPES 2006, Nottingham, UK, April 18-21,
-                  2006, Revised Selected Papers",
-  year =         2007,
-  publisher =    "Springer Berlin Heidelberg",
-  address =      "Berlin, Heidelberg",
-  pages =        "237--252",
-  abstract =     "We propose a new language for writing programs with
-                  dependent types on top of the Coq proof
-                  assistant. This language permits to establish a
-                  phase distinction between writing and proving
-                  algorithms in the Coq environment. Concretely, this
-                  means allowing to write algorithms as easily as in a
-                  practical functional programming language whilst
-                  giving them as rich a specification as desired and
-                  proving that the code meets the specification using
-                  the whole Coq proof apparatus. This is achieved by
-                  extending conversion to an equivalence which relates
-                  types and subsets based on them, a technique
-                  originating from the ``Predicate subtyping'' feature
-                  of PVS and following mathematical convention. The
-                  typing judgements can be translated to the (CIC) by
-                  means of an interpretation which inserts coercions
-                  at the appropriate places. These coercions can
-                  contain existential variables representing the
-                  propositional parts of the final term, corresponding
-                  to proof obligations (or PVS type-checking
-                  conditions). A prototype implementation of this
-                  process is integrated with the Coq environment."
-}
-
-@inproceedings{sozeau:2007b,
-  author =       {Sozeau, Matthieu},
-  title =        {Program-ing Finger Trees in Coq},
-  booktitle =    {Proceedings of the 12th ACM SIGPLAN International
-                  Conference on Functional Programming},
-  series =       {ICFP '07},
-  year =         2007,
-  isbn =         {978-1-59593-815-2},
-  location =     {Freiburg, Germany},
-  pages =        {13--24},
-  numpages =     12,
-  publisher =    {ACM},
-  address =      {New York, NY, USA},
 }
 
 @article{vandalen:2004,
