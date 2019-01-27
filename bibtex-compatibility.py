@@ -1,4 +1,5 @@
 import re
+import sys
 
 month_names = {
   1: "jan",
@@ -15,8 +16,11 @@ month_names = {
   12: "dec"
 }
 
-old_db = open("refs.bib","r")
-new_db = open("refs-bibtex.bib","w")
+db_name = sys.argv[1]
+
+old_db = open(db_name + ".bib","r")
+new_db = open(db_name + "-bibtex.bib","w")
+
 for line in old_db.readlines():
     date_pattern = re.search("date.*{(\d+)-?(\d+)?}",line)
     if date_pattern:
