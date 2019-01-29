@@ -22,7 +22,7 @@ old_db = open(db_name + ".bib","r")
 new_db = open(db_name + "-bibtex.bib","w")
 
 for line in old_db.readlines():
-    date_pattern = re.search("date.*{(\d+)-?(\d+)?}",line)
+    date_pattern = re.search("date.*{(\d+)-?(\d+)?.*}",line)
     if date_pattern:
         new_db.write("  year = {{{0:s}}},\n".format(date_pattern.group(1)))
         # print "  year = {{{0:s}}},\n".format(date_pattern.group(1)),
