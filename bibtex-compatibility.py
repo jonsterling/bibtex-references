@@ -29,10 +29,11 @@ for line in old_db.readlines():
         if date_pattern.group(2) != None:
             month = month_names[int(date_pattern.group(2))];
             new_db.write("  month = {},\n".format(month))
-        continue
-    if re.search("journaltitle",line):
+    elif re.search("journaltitle",line):
         new_db.write(line.replace("journaltitle","journal"))
-        continue
-    new_db.write(line)
+    elif re.search("@online",line):
+        new_db.write(line.replace("@online","@unpublished"))
+    else:
+      new_db.write(line)
 old_db.close()
 new_db.close()
