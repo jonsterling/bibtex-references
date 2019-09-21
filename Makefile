@@ -3,6 +3,8 @@ validate: refs.bib
 	biber --tool --configfile=short-bib.conf --output_file=refs-short.bib refs.bib
 	python bibtex-compatibility.py refs
 	python bibtex-compatibility.py refs-short
+	sed -i 's/\\i{}/i/g' *.bib
+	sed -i 's/\\i/i/g' *.bib
 
 clean:
 	rm *.blg
