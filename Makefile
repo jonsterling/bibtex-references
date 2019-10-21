@@ -4,7 +4,7 @@ validate: refs.bib
 	python bibtex-compatibility.py refs
 	python bibtex-compatibility.py refs-short
 	sed -i 's/\\i{}/i/g' *.bib
-	sed -i 's/\\i/i/g' *.bib
+	sed -i 's/{\\i}/i/g' *.bib
 
 clean:
 	rm *.blg
