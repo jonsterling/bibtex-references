@@ -18,7 +18,7 @@ month_names = {
 
 db_name = sys.argv[1]
 
-old_db = open(db_name + ".bib","r")
+old_db = open(db_name + "-expanded.bib","r")
 new_db = open(db_name + "-bibtex.bib","w")
 
 for line in old_db.readlines():
