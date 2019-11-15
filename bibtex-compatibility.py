@@ -31,6 +31,8 @@ for line in old_db.readlines():
             new_db.write("  month = {},\n".format(month))
     elif re.search("journaltitle",line):
         new_db.write(line.replace("journaltitle","journal"))
+    elif re.search("location",line):
+        new_db.write(line.replace("location","address"))
     elif re.search("institution",line):
         new_db.write(line.replace("institution","school"))
     elif re.search("@online",line):
