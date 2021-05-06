@@ -5,5 +5,5 @@ How to edit this database:
 
 How to use this database:
 
-    \bibliography{references/refs}        % if you are using biblatex
+    \addbibresource{references/refs.bib}  % if you are using biblatex
     \bibliography{references/refs-bibtex} % if you are using bibtex
