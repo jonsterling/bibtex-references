@@ -1,3 +1,7 @@
+@string{jal = "Journal of Applied Logic"}
+@string{jfp = "Journal of Functional Programming"}
+@string{tocl = "ACM Transactions on Computational Logic"}
+
 @proceedings{popl:1985,
   booktitle = {Proceedings of the 12th ACM SIGACT-SIGPLAN Symposium on Principles of Programming Languages},
   year = {1985},
@@ -187,7 +191,7 @@
   author = {Abadi, Mart\'{i}n and Cardelli, Luca and Curien, Pierre-Louis and Levy, Jean-Jacques},
   year = {1991},
   month = oct,
-  journal = {Journal of Functional Programming},
+  journal = jfp,
   title = {Explicit Substitutions},
   volume = {1},
 }
@@ -348,7 +352,7 @@
 @article{allen-et-al:2006,
   author = {Allen, S. F. and Bickford, M. and Constable, R. L. and Eaton, R. and Kreitz, C. and Lorigo, L. and Moran, E.},
   year = {2006},
-  journal = {Journal of Applied Logic},
+  journal = jal,
   number = {4},
   title = {Innovations in computational type theory using {Nuprl}},
   volume = {4},
@@ -411,7 +415,7 @@
   author = {Altenkirch, Thorsten and Chapman, James},
   year = {2009},
   month = jul,
-  journal = {J. Funct. Program.},
+  journal = jfp,
   number = {3-4},
   title = {Big-step Normalisation},
   volume = {19},
@@ -427,7 +431,7 @@
 @article{altenkirch-ghani-hancock-mcbride-morris:2015,
   author = {Altenkirch, Thorsten and Ghani, Neil and Hancock, Peter and McBride, Conor and Morris, Peter},
   year = {2015},
-  journal = {Journal of Functional Programming},
+  journal = jfp,
   title = {Indexed containers},
   volume = {25},
 }
@@ -1284,7 +1288,7 @@
   author = {Brady, Edwin},
   year = {2013},
   month = sep,
-  journal = {Journal of Functional Programming},
+  journal = jfp,
   number = {5},
   title = {{Idris}, a general-purpose dependently typed programming language: Design and implementation},
   volume = {23},
@@ -1864,7 +1868,7 @@
 @article{crary:2020,
   author = {Crary, Karl},
   year = {2020},
-  journal = {Journal of Functional Programming},
+  journal = jfp,
   title = {A focused solution to the avoidance problem},
   volume = {30},
 }
@@ -2736,7 +2740,7 @@
   author = {Harper, Robert and Licata, Daniel R.},
   year = {2007},
   month = jul,
-  journal = {Journal of Functional Programming},
+  journal = jfp,
   number = {4-5},
   title = {Mechanizing Metatheory in a Logical Framework},
   volume = {17},
@@ -2767,7 +2771,6 @@
   author = {Harper, Robert and Pfenning, Frank},
   year = {2005},
   month = jan,
-  journal = {ACM Trans. Comput. Logic},
   number = {1},
   title = {On Equivalence and Canonical Forms in the {LF} Type Theory},
   volume = {6},
@@ -3128,7 +3131,7 @@
 @article{iris:2018,
   author = {Jung, Ralf and Krebbers, Robbert and Jourdan, Jacques-Henri and Bizjak, Ale\v{s} and Birkedal, Lars and Dreyer, Derek},
   year = {2018},
-  journal = {Journal of Functional Programming},
+  journal = jfp,
   title = {Iris from the ground up: A modular foundation for higher-order concurrent separation logic},
   volume = {28},
 }
@@ -3520,7 +3523,7 @@
 @article{leroy:1996,
   author = {Leroy, Xavier},
   year = {1996},
-  journal = {Journal of Functional Programming},
+  journal = jfp,
   number = {5},
   title = {A syntactic theory of type generativity and sharing},
   volume = {6},
@@ -3530,7 +3533,7 @@
   author = {Leroy, Xavier},
   year = {2000},
   month = may,
-  journal = {Journal of Functional Programming},
+  journal = jfp,
   number = {3},
   title = {A Modular Module System},
   volume = {10},
@@ -3649,7 +3652,6 @@
   author = {Lumsdaine, Peter LeFanu and Warren, Michael A.},
   year = {2015},
   month = jul,
-  journal = {ACM Trans. Comput. Logic},
   number = {3},
   title = {The Local Universes Model: An Overlooked Coherence Construction for Dependent Type Theories},
   volume = {16},
@@ -4195,7 +4197,6 @@
   author = {Nanevski, Aleksandar and Pfenning, Frank and Pientka, Brigitte},
   year = {2008},
   month = jun,
-  journal = {ACM Transactions Computational Logic},
   title = {Contextual modal type theory},
   volume = {9},
 }
@@ -4305,9 +4306,11 @@
 
 @inproceedings{nogin:2002,
   author = {Nogin, Aleksey},
-  booktitle = {Theorem Proving in Higher Order Logics},
+  booktitle = {Theorem Proving in Higher Order Logics, 15th International Conference, TPHOLs 2002, Hampton, VA, USA, August 20-23, 2002, Proceedings},
   year = {2002},
-  title = {Quotient Types: A Modular Approach},
+  series = {Lecture Notes in Computer Science},
+  title = {Quotient Types: {A} Modular Approach},
+  volume = {2410},
 }
 
 @book{nordstrom-peterson-smith:1990,
@@ -4374,9 +4377,11 @@
 
 @inproceedings{orton-pitts:2016,
   author = {Orton, Ian and Pitts, Andrew M.},
-  booktitle = {25th {EACSL} Annual Conference on Computer Science Logic, {CSL} 2016, August 29 - September 1, 2016, Marseille, France},
+  booktitle = {25th EACSL Annual Conference on Computer Science Logic (CSL 2016)},
   year = {2016},
+  series = {Leibniz International Proceedings in Informatics (LIPIcs)},
   title = {Axioms for Modelling Cubical Type Theory in a Topos},
+  volume = {62},
 }
 
 @inproceedings{oury:2005,
@@ -4715,10 +4720,9 @@
 
 @inproceedings{rahli-bickford:2016,
   author = {Rahli, Vincent and Bickford, Mark},
-  booktitle = {Proceedings of the 5th ACM SIGPLAN Conference on Certified Programs and Proofs},
+  booktitle = {Proceedings of the 5th {ACM} {SIGPLAN} Conference on Certified Programs and Proofs, Saint Petersburg, FL, USA, January 20-22, 2016},
   year = {2016},
-  series = {CPP 2016},
-  title = {A Nominal Exploration of {Intuitionism}},
+  title = {A nominal exploration of intuitionism},
 }
 
 @article{rahli-bickford:2018,
@@ -4879,7 +4883,7 @@
 @article{rossberg:2018,
   author = {Rossberg, Andreas},
   year = {2018},
-  journal = {Journal of Functional Programming},
+  journal = jfp,
   title = {{1ML} -- Core and modules united},
   volume = {28},
 }
@@ -4887,7 +4891,7 @@
 @article{rossberg-russo-dreyer:2014,
   author = {Rossberg, Andreas and Russo, Claudio and Dreyer, Derek},
   year = {2014},
-  journal = {Journal of Functional Programming},
+  journal = jfp,
   number = {5},
   title = {F-ing modules},
   volume = {24},
@@ -5177,7 +5181,7 @@
 @article{sterling:2021:bhfs,
   author = {Sterling, Jonathan},
   year = {2021},
-  journal = {Journal of Functional Programming},
+  journal = jfp,
   title = {Higher-Order Functions and Brouwer's Thesis},
 }
 
@@ -5277,8 +5281,10 @@
 @article{stone-harper:2006,
   author = {Stone, Christopher A. and Harper, Robert},
   year = {2006},
-  journal = {ACM Transactions on Computational Logic},
+  journal = tocl,
+  number = {4},
   title = {Extensional equivalence and singleton types},
+  volume = {7},
 }
 
 @phdthesis{stone:2000,
@@ -5345,9 +5351,9 @@
 @article{streicher:2014:simplicial,
   author = {Streicher, Thomas},
   year = {2014},
-  issue = {1},
-  journal = {Journal of Applied Logic},
-  title = {A model of type theory in simplicial sets: A brief introduction to Voevodsky's homotopy type theory},
+  journal = jal,
+  number = {1},
+  title = {A model of type theory in simplicial sets: {A} brief introduction to Voevodsky's homotopy type theory},
   volume = {12},
 }
 
