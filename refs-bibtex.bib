@@ -2,6 +2,7 @@
 @string{apal = "Annals of Pure and Applied Logic"}
 @string{cup = "Cambridge University Press"}
 @string{entcs = "Electronic Notes in Theoretical Computer Science"}
+@string{eptcs = "Electronic Proceedings in Theoretical Computer Science"}
 @string{i&c = "Information and Computation"}
 @string{ieee = "IEEE Computer Society"}
 @string{jacm = "Journal of the ACM"}
@@ -432,6 +433,18 @@
   month = jul,
 }
 
+@proceedings{ecoop:2021,
+  editor = {M{\o{}}ller, Anders and Sridharan, Manu},
+  address = {Dagstuhl, Germany},
+  publisher = {Schloss Dagstuhl -- Leibniz-Zentrum f\"{u}r Informatik},
+  booktitle = {35th European Conference on Object-Oriented Programming (ECOOP 2021)},
+  year = {2021},
+  isbn = {978-3-95977-190-0},
+  issn = {1868-8969},
+  series = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  volume = {194},
+}
+
 @proceedings{popl:2003,
   address = {New Orleans, Louisiana, USA},
   publisher = acm,
@@ -512,6 +525,7 @@
 @phdthesis{abel:2013,
   author = {Abel, Andreas},
   school = {Ludwig-Maximilians-Universit\"{a}t M\"{u}nchen},
+  url = {http://www2.tcs.ifi.lmu.de/~abel/habil.pdf},
   year = {2013},
   title = {Normalization by Evaluation: Dependent Types and Impredicativity},
   type = {Habilitation},
@@ -601,6 +615,7 @@
   publisher = acm,
   year = {2017},
   month = aug,
+  doi = {10.1145/3110277},
   issn = {2475-1421},
   journal = pacmpl,
   keywords = {dependent types,eta-equality,normalization-by-evaluation,proof irrelevance,sized types,subtyping,universes},
@@ -640,7 +655,7 @@
   school = {University of Manchester},
   year = {1978},
   title = {A General {Church-Rosser} Theorem},
-  type = {techreport},
+  type = {Technical Report},
 }
 
 @incollection{aczel:1978:czf,
@@ -800,9 +815,8 @@
   publisher = ieee,
   booktitle = {{Proceedings of the 16th Annual IEEE Symposium on Logic in Computer Science}},
   year = {2001},
-  doi = {871816.871869},
+  doi = {10.1109/LICS.2001.932506},
   issn = {1043-6871},
-  pages = {303--},
   title = {Normalization by Evaluation for Typed Lambda Calculus with Coproducts},
 }
 
@@ -903,6 +917,10 @@
   publisher = {Springer Berlin Heidelberg},
   booktitle = {Foundations of Software Science and Computation Structures},
   year = {2017},
+  doi = {10.1007/978-3-662-54458-7_31},
+  eprint = {1610.09254},
+  eprintclass = {cs.LO},
+  eprinttype = {arXiv},
   isbn = {978-3-662-54458-7},
   pages = {534--549},
   title = {Partiality, Revisited: The Partiality Monad as a Quotient Inductive-Inductive Type},
@@ -923,6 +941,7 @@
   publisher = {Springer Berlin Heidelberg},
   booktitle = {Category Theory and Computer Science},
   year = {1995},
+  doi = {10.1007/3-540-60164-3_27},
   isbn = {978-3-540-44661-3},
   pages = {182--199},
   title = {Categorical reconstruction of a reduction free normalization proof},
@@ -1075,6 +1094,7 @@
   author = {Angiuli, Carlo},
   school = {Carnegie Mellon University},
   year = {2019},
+  number = {CMU-CS-19-127},
   title = {Computational Semantics of Cartesian Cubical Type Theory},
 }
 
@@ -1101,7 +1121,7 @@
   url = {https://www.cs.cmu.edu/~cangiuli/papers/abcfhl.pdf},
   year = {2021},
   month = mar,
-  note = {Preprint},
+  note = {To appear, Mathematical Structures in Computer Science},
   title = {Syntax and Models of Cartesian Cubical Type Theory},
 }
 
@@ -1141,9 +1161,9 @@
 
 @unpublished{angiuli-harper-chitt2:2016,
   author = {Angiuli, Carlo and Harper, Robert},
-  url = {https://arxiv.org/abs/1606.09638},
   year = {2016},
   eprint = {1606.09638},
+  eprintclass = {cs.LO},
   eprinttype = {arXiv},
   title = {Computational Higher Type Theory {II}: Dependent Cubical Realizability},
 }
@@ -1163,9 +1183,9 @@
 
 @unpublished{angiuli-harper-wilson:2016,
   author = {Angiuli, Carlo and Harper, Robert and Wilson, Todd},
-  url = {https://arxiv.org/abs/1604.08873},
   year = {2016},
   eprint = {1604.08873},
+  eprintclass = {cs.LO},
   eprinttype = {arXiv},
   title = {Computational Higher Type theory {I}: Abstract Cubical Realizability},
 }
@@ -1176,10 +1196,11 @@
   publisher = acm,
   booktitle = {POPL 2017: Proceedings of the 44th ACM SIGPLAN Symposium on Principles of Programming Languages},
   year = {2017},
+  doi = {10.1145/3009837.3009861},
   isbn = {978-1-4503-4660-3},
   keywords = {Homotopy Type Theory,Logical Relations},
   pages = {680--693},
-  title = {Computational Higher-dimensional Type Theory},
+  title = {Computational Higher-Dimensional Type Theory},
 }
 
 @unpublished{angiuli-favonia-harper:2017,
@@ -1382,38 +1403,11 @@
   publisher = acm,
   booktitle = {Proceedings of the 18th ACM SIGPLAN International Conference on Functional Programming},
   year = {2013},
+  doi = {10.1145/2500365.2500597},
   isbn = {978-1-4503-2326-0},
   keywords = {coalgebras,corecursion,guarded recursion,total functional programming},
   pages = {197--208},
   title = {Productive Coprogramming with Guarded Recursion},
-}
-
-@article{awodey-butz:2000,
-  author = {Awodey, S. and Butz, C.},
-  publisher = {Association for Symbolic Logic},
-  url = {http://www.jstor.org/stable/2586693},
-  year = {2000},
-  issn = {00224812},
-  journal = jsl,
-  number = {3},
-  pages = {1168--1182},
-  title = {Topological Completeness for Higher-Order Logic},
-  volume = {65},
-}
-
-@article{awodey-gambino-lumsdaine-warren:2009,
-  author = {Awodey, S. and Gambino, N. and Lumsdaine, P. L. and Warren, M. A.},
-  language = {english},
-  year = {2009},
-  month = sep,
-  issn = {1943-5886},
-  issue = {03},
-  journal = jsl,
-  langid = {english},
-  pages = {861--890},
-  shorttitle = {{Lawvere--Tierney sheaves \textellipsisisdot}},
-  title = {{L}awvere--{T}ierney sheaves in Algebraic Set Theory},
-  volume = {74},
 }
 
 @article{awodey:2008,
@@ -1476,6 +1470,9 @@
   publisher = cup,
   year = {2018},
   doi = {10.1017/S0960129516000268},
+  eprint = {1406.3219},
+  eprintclass = {math.CT},
+  eprinttype = {arXiv},
   journal = mscs,
   number = {2},
   pages = {241--286},
@@ -1499,6 +1496,22 @@
   title = {A Quillen model structure on the category of cartesian cubical sets},
 }
 
+@article{awodey-butz:2000,
+  author = {Awodey, Steve and Butz, Carsten},
+  publisher = {Association for Symbolic Logic},
+  url = {http://www.jstor.org/stable/2586693},
+  year = {2000},
+  eprint = {math/9707206},
+  eprintclass = {math.LO},
+  eprinttype = {arXiv},
+  issn = {00224812},
+  journal = jsl,
+  number = {3},
+  pages = {1168--1182},
+  title = {Topological Completeness for Higher-Order Logic},
+  volume = {65},
+}
+
 @article{awodey-butz-simpson-streicher:2014,
   author = {Awodey, Steve and Butz, Carsten and Simpson, Alex and Streicher, Thomas},
   year = {2014},
@@ -1510,6 +1523,21 @@
   pages = {428--502},
   title = {Relating first-order set theories, toposes and categories of classes},
   volume = {165},
+}
+
+@article{awodey-gambino-lumsdaine-warren:2009,
+  author = {Awodey, Steve and Gambino, Nicola and Lumsdaine, Peter Lefanu and Warren, Michael A.},
+  language = {english},
+  year = {2009},
+  month = sep,
+  issn = {1943-5886},
+  issue = {03},
+  journal = jsl,
+  langid = {english},
+  pages = {861--890},
+  shorttitle = {{Lawvere--Tierney sheaves \textellipsisisdot}},
+  title = {{L}awvere--{T}ierney sheaves in Algebraic Set Theory},
+  volume = {74},
 }
 
 @article{awodey-warren:2009,
@@ -1609,7 +1637,7 @@
   note = {Revision of Cornell University Ph.D. thesis submitted August 1979},
   number = {TR81-455},
   title = {A Logic for Correct Program Development},
-  type = {techreport},
+  type = {Technical Report},
 }
 
 @article{bates-constable:1985,
@@ -1970,7 +1998,7 @@
   school = {University of Copenhagen},
   year = {2004},
   title = {On the logic of bunched implications and its relation to separation logic},
-  type = {techreport},
+  type = {Technical Report},
 }
 
 @article{biering-birkedal-torp-smith:2007,
@@ -2009,6 +2037,7 @@
   annotation = {Keywords: Guarded Recursion, Dependent Type Theory, Cubical Type Theory, Denotational Semantics, Homotopy Type Theory},
   booktitle = {25th EACSL Annual Conference on Computer Science Logic (CSL 2016)},
   year = {2016},
+  doi = {10.4230/LIPIcs.CSL.2016.23},
   isbn = {978-3-95977-022-4},
   issn = {1868-8969},
   pages = {23:1--23:17},
@@ -2112,6 +2141,20 @@
   title = {On semantics and applications of guarded recursion},
 }
 
+@inproceedings{bizjak-birkedal-miculan:2014,
+  author = {Bizjak, Ales and Birkedal, Lars and Miculan, Marino},
+  editor = {Dowek, Gilles},
+  publisher = {Springer},
+  booktitle = {Rewriting and Typed Lambda Calculi -- Joint International Conference, RTA-TLCA 2014, Held as Part of the Vienna Summer of Logic, VSL 2014, Vienna, Austria, July 14-17, 2014. Proceedings},
+  year = {2014},
+  doi = {10.1007/978-3-319-08918-8_8},
+  isbn = {978-3-319-08917-1},
+  pages = {108--123},
+  series = {Lecture Notes in Computer Science},
+  title = {A Model of Countable Nondeterminism in Guarded Type Theory},
+  volume = {8560},
+}
+
 @article{bizjak-birkedal:2018:equilogical,
   author = {Bizjak, Ale\v{s} and Birkedal, Lars},
   year = {2018},
@@ -2128,22 +2171,10 @@
   author = {Bizjak, Ale\v{s} and Birkedal, Lars},
   year = {2018},
   doi = {10.1016/j.entcs.2018.03.016},
-  journal = {Electr. Notes Theor. Comput. Sci.},
+  journal = entcs,
   pages = {57--78},
   title = {On Models of Higher-Order Separation Logic},
   volume = {336},
-}
-
-@inproceedings{bizjak-birkedal-miculan:2014,
-  author = {Bizjak, Ale\v{s} and Birkedal, Lars and Miculan, Marino},
-  editor = {Dowek, Gilles},
-  address = {Cham},
-  publisher = {Springer International Publishing},
-  booktitle = {Rewriting and Typed Lambda Calculi},
-  year = {2014},
-  isbn = {978-3-319-08918-8},
-  pages = {108--123},
-  title = {A Model of Countable Nondeterminism in Guarded Type Theory},
 }
 
 @inproceedings{bgcmb:2016,
@@ -2153,6 +2184,10 @@
   publisher = {Springer Berlin Heidelberg},
   booktitle = {Foundations of Software Science and Computation Structures: 19th International Conference, FOSSACS 2016, Held as Part of the European Joint Conferences on Theory and Practice of Software, ETAPS 2016, Eindhoven, The Netherlands, April 2--8, 2016, Proceedings},
   year = {2016},
+  doi = {10.1007/978-3-662-49630-5_2},
+  eprint = {1601.01586},
+  eprintclass = {cs.LO},
+  eprinttype = {arXiv},
   isbn = {978-3-662-49630-5},
   pages = {20--35},
   title = {Guarded Dependent Type Theory with Coinductive Types},
@@ -2164,6 +2199,7 @@
   publisher = {Elsevier Science Publishers B. V.},
   year = {2015},
   month = dec,
+  doi = {10.1016/j.entcs.2015.12.007},
   issn = {1571-0661},
   journal = entcs,
   keywords = {Guarded recursion,categorical semantics,coinductive types,type theory},
@@ -2279,7 +2315,7 @@
   year = {2011},
   month = oct,
   doi = {10.4204/EPTCS.71.3},
-  journal = {Electronic Proceedings in Theoretical Computer Science},
+  journal = eptcs,
   title = {Multi-level Contextual Type Theory},
   volume = {71},
 }
@@ -2366,6 +2402,7 @@
   publisher = cup,
   year = {2013},
   month = sep,
+  doi = {10.1017/S095679681300018X},
   journal = jfp,
   number = {5},
   pages = {552--593},
@@ -2373,14 +2410,21 @@
   volume = {23},
 }
 
-@unpublished{brady:2021,
+@inproceedings{brady:2021,
   author = {Brady, Edwin},
+  editor = {M{\o{}}ller, Anders and Sridharan, Manu},
+  address = {Dagstuhl, Germany},
+  publisher = {Schloss Dagstuhl -- Leibniz-Zentrum f\"{u}r Informatik},
+  url = {https://drops.dagstuhl.de/opus/volltexte/2021/14052},
+  booktitle = {35th European Conference on Object-Oriented Programming (ECOOP 2021)},
   year = {2021},
-  eprint = {2104.00480},
-  eprintclass = {cs.PL},
-  eprinttype = {arXiv},
-  note = {To appear in the proceedings of ECOOP 2021},
-  title = {Idris 2: Quantitative Type Theory in Practice},
+  doi = {10.4230/LIPIcs.ECOOP.2021.9},
+  isbn = {978-3-95977-190-0},
+  issn = {1868-8969},
+  pages = {9:1--9:26},
+  series = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  title = {{Idris 2: Quantitative Type Theory in Practice}},
+  volume = {194},
 }
 
 @misc{epigram:2011,
@@ -2396,7 +2440,7 @@
   publisher = {Springer},
   booktitle = {Types for Proofs and Programs, International Workshop, {TYPES} 2003, Torino, Italy, April 30 - May 4, 2003, Revised Selected Papers},
   year = {2003},
-  doi = {10.1007/978-3-540-24849-1\_8},
+  doi = {10.1007/978-3-540-24849-1_8},
   pages = {115--129},
   series = {Lecture Notes in Computer Science},
   title = {Inductive Families Need Not Store Their Indices},
@@ -2622,6 +2666,7 @@
   author = {Cavallo, Evan},
   school = {Carnegie Mellon University},
   year = {2021},
+  number = {CMU-CS-21-100},
   title = {Higher Inductive Types and Internal Parametricity for Cubical Type Theory},
 }
 
@@ -2731,6 +2776,7 @@
   booktitle = {Proceedings of the 21st ACM SIGPLAN International Conference on Functional Programming},
   year = {2016},
   month = sep,
+  doi = {10.1145/2951913.2951932},
   isbn = {978-1-4503-4219-3},
   keywords = {Metaprogramming,dependent types,elaboration},
   pages = {284--297},
@@ -2821,6 +2867,10 @@
   publisher = {Springer Berlin Heidelberg},
   booktitle = {Foundations of Software Science and Computation Structures},
   year = {2015},
+  doi = {10.1007/978-3-662-46678-0_26},
+  eprint = {1501.02925},
+  eprintclass = {cs.PL},
+  eprinttype = {arXiv},
   isbn = {978-3-662-46678-0},
   pages = {407--421},
   title = {Programming and Reasoning with Guarded Recursion for Coinductive Types},
@@ -2887,6 +2937,9 @@
   url = {http://www.collegepublications.co.uk/journals/ifcolog/?00019},
   year = {2017},
   month = nov,
+  eprint = {1611.02108},
+  eprintclass = {cs.LO},
+  eprinttype = {arXiv},
   journal = {IfCoLog Journal of Logics and their Applications},
   number = {10},
   pages = {3127--3169},
@@ -2970,7 +3023,7 @@
   year = {1982},
   number = {CSR-118-82},
   title = {Intensional analysis of functions and types},
-  type = {techreport},
+  type = {Technical Report},
 }
 
 @techreport{constable:1985,
@@ -2979,7 +3032,7 @@
   year = {1985},
   number = {TR85-684},
   title = {The Semantics of Evidence},
-  type = {techreport},
+  type = {Technical Report},
 }
 
 @inbook{constable-crary:2002,
@@ -5015,7 +5068,7 @@
   school = {RIMS, Kyoto University},
   year = {1999},
   title = {Categorical Glueing and Logical Predicates for Models of Linear Logic},
-  type = {techreport},
+  type = {Technical Report},
 }
 
 @book{hegel:sl:miller,
@@ -5245,6 +5298,7 @@
   publisher = {Oxford Univ. Press},
   booktitle = {Twenty-five years of constructive type theory ({V}enice, 1995)},
   year = {1998},
+  doi = {10.1093/oso/9780198501275.001.0001},
   pages = {83--111},
   series = {Oxford Logic Guides},
   title = {The groupoid interpretation of type theory},
@@ -7041,7 +7095,7 @@
 @article{mccusker-power:2010,
   author = {McCusker, Guy and Power, John},
   year = {2010},
-  journal = {Electr. Notes Theor. Comput. Sci.},
+  journal = entcs,
   pages = {389--402},
   title = {Modelling Local Variables: Possible Worlds and Object Spaces},
   volume = {265},
@@ -7127,7 +7181,7 @@
   publisher = {Stanford University},
   year = {1972},
   title = {Logic for Computable Functions: Description of a Machine Implementation.},
-  type = {techreport},
+  type = {Technical Report},
 }
 
 @book{milner-tofte-harper:1990,
@@ -7392,7 +7446,7 @@
   keywords = {typed intermediate languages,Standard ML,hash consing,ADT,datatype,views,types},
   number = {CMU-CS-02-120},
   title = {{The Wizard of TILT}: Efficient, Convenient and Abstract Type Representations},
-  type = {techreport},
+  type = {Technical Report},
 }
 
 @inproceedings{murphy-crary-harper:2008,
@@ -7825,6 +7879,7 @@
 @article{paviotti-mogelberg-birkedal:2015,
   author = {Paviotti, Marco and M\o{}gelberg, Rasmus Ejlers and Birkedal, Lars},
   year = {2015},
+  doi = {10.1016/j.entcs.2015.12.020},
   issn = {1571-0661},
   journal = entcs,
   keywords = {Denotational semantics,guarded recursion,type theory,PCF,synthetic domain theory},
@@ -7896,7 +7951,7 @@
   year = {1982},
   number = {PMG report 9},
   title = {A Programming System for Type Theory},
-  type = {techreport},
+  type = {Technical Report},
 }
 
 @inproceedings{jones-gordon-finne:1996,
@@ -7963,7 +8018,7 @@
   year = {1992},
   number = {ECS-LFCS-92-208},
   title = {An Introduction to Fibrations, Topos Theory, the Effective Topos and Modest Sets},
-  type = {techreport},
+  type = {Technical Report},
 }
 
 @phdthesis{phoa:1991,
@@ -7971,6 +8026,7 @@
   school = {University of Edinburgh},
   year = {1991},
   month = jul,
+  number = {LFCS-91-171},
   title = {Domain Theory in Realizability Toposes},
 }
 
@@ -8476,6 +8532,9 @@
   author = {Riehl, Emily and Shulman, Michael},
   url = {https://journals.mq.edu.au/index.php/higher_structures/article/view/36},
   year = {2017},
+  eprint = {1705.07442},
+  eprintclass = {math.CT},
+  eprinttype = {arXiv},
   issue = {1},
   journal = {Higher Structures},
   pages = {147--224},
@@ -8958,7 +9017,7 @@
   month = jun,
   number = {UCAM-CL-TR-688},
   title = {{Name-passing process calculi: operational models and structural operational semantics}},
-  type = {techreport},
+  type = {Technical Report},
 }
 
 @inproceedings{staton:2010,
@@ -9027,6 +9086,7 @@
   author = {Sterling, Jonathan},
   school = {Carnegie Mellon University},
   year = {2021},
+  doi = {10.1109/LICS.2011.16},
   number = {CMU-CS-21-142},
   title = {First Steps in Synthetic Tait Computability: The Objective Metatheory of Cubical Type Theory},
 }
@@ -10002,6 +10062,7 @@
   author = {Zeilberger, Noam},
   school = {Carnegie Mellon University},
   year = {2009},
+  number = {CMU-CS-09-122},
   title = {The logical basis of evaluation order and pattern-matching},
 }
 
