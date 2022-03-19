@@ -6,7 +6,7 @@ validate: refs.bib
 	biber --tool --output-safechars --fixinits --isbn-normalise --output_indent=2 --output_fieldcase=lower --output_encoding=ascii --output-resolve --configfile=biber-tool.conf --output_file=refs-expanded.bib refs.bib
 
 	# fix the broken bibtex
-	python bibtex-compatibility.py refs
+	python3.9 bibtex-compatibility.py refs
 	./cleanup.sh
 
 clean:
