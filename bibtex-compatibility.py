@@ -33,8 +33,6 @@ for line in old_db.readlines():
         new_db.write(line.replace("journaltitle","journal"))
     elif re.search("location",line):
         new_db.write(line.replace("location","address"))
-    elif re.search("institution",line):
-        new_db.write(line.replace("institution","school"))
     elif re.search("@online",line):
         new_db.write(line.replace("@online","@unpublished"))
     elif re.search("@report",line):
