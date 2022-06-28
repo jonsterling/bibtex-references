@@ -2506,6 +2506,20 @@
   volume = {411},
 }
 
+@article{birkedal-stovring-thamsborg:2012,
+  author = {Birkedal, Lars and St{\o{}}vring, Kristian and Thamsborg, Jacob},
+  year = {2012},
+  doi = {10.1016/j.jlap.2012.03.004},
+  issn = {1567-8326},
+  journal = {The Journal of Logic and Algebraic Programming},
+  keywords = {Abstract data types,Logical relations,Local state,Parametricity},
+  note = {Special Issue: NWPT 2009},
+  number = {4},
+  pages = {491--521},
+  title = {A relational realizability model for higher-order stateful ADTs},
+  volume = {81},
+}
+
 @book{bishop:1967,
   author = {Bishop, Errett},
   address = {New York},
@@ -4444,6 +4458,22 @@
   keywords = {type systems,type classes,type inference,modules},
   pages = {63--70},
   title = {Modular Type Classes},
+}
+
+@inproceedings{dreyer-neis-rossberg-birkedal:2010,
+  abstract = {The method of logical relations is a classic technique for proving the equivalence of higher-order programs that implement the same observable behavior but employ different internal data representations. Although it was originally studied for pure, strongly normalizing languages like System F, it has been extended over the past two decades to reason about increasingly realistic languages. In particular, Appel and McAllester's idea of step-indexing has been used recently to develop syntactic Kripke logical relations for ML-like languages that mix functional and imperative forms of data abstraction. However, while step-indexed models are powerful tools, reasoning with them directly is quite painful, as one is forced to engage in tedious step-index arithmetic to derive even simple results.In this paper, we propose a logic LADR for equational reasoning about higher-order programs in the presence of existential type abstraction, general recursive types, and higher-order mutable state. LADR exhibits a novel synthesis of features from Plotkin-Abadi logic, G\"{o}del-L\"{o}b logic, S4 modal logic, and relational separation logic. Our model of LADR is based on Ahmed, Dreyer, and Rossberg's state-of-the-art step-indexed Kripke logical relation, which was designed to facilitate proofs of representation independence for "state-dependent" ADTs. LADR enables one to express such proofs at a much higher level, without counting steps or reasoning about the subtle, step-stratified construction of possible worlds.},
+  author = {Dreyer, Derek and Neis, Georg and Rossberg, Andreas and Birkedal, Lars},
+  address = {Madrid, Spain},
+  publisher = acm,
+  url = {https://doi.org/10.1145/1706299.1706323},
+  booktitle = {Proceedings of the 37th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+  year = {2010},
+  doi = {10.1145/1706299.1706323},
+  isbn = {978-1-60558-479-9},
+  keywords = {modal logic,step-indexed logical relations,plotkin-abadi logic,abstract data types,local state,separation logic},
+  pages = {185--198},
+  series = {POPL '10},
+  title = {A Relational Modal Logic for Higher-Order Stateful ADTs},
 }
 
 @book{dummett:elements,
