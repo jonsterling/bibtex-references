@@ -199,6 +199,13 @@
   isbn = {978-1-59593-689-9},
 }
 
+@proceedings{popl:2009,
+  editor = {Shao, Zhong and Pierce, Benjamin C.},
+  publisher = acm,
+  booktitle = {Proceedings of the 36th {ACM} {SIGPLAN-SIGACT} Symposium on Principles of Programming Languages, {POPL} 2009, Savannah, GA, USA, January 21-23, 2009},
+  year = {2009},
+}
+
 @proceedings{popl:2010,
   editor = {Hermenegildo, Manuel V. and Palsberg, Jens},
   publisher = acm,
@@ -850,6 +857,17 @@
   year = {2017},
   isbn = {978-1-4503-4660-3},
   title = {Dijkstra Monads for Free},
+}
+
+@inproceedings{ahmed-dreyer-rossberg:2009,
+  author = {Ahmed, Amal and Dreyer, Derek and Rossberg, Andreas},
+  editor = {Shao, Zhong and Pierce, Benjamin C.},
+  publisher = acm,
+  booktitle = {Proceedings of the 36th {ACM} {SIGPLAN-SIGACT} Symposium on Principles of Programming Languages, {POPL} 2009, Savannah, GA, USA, January 21-23, 2009},
+  year = {2009},
+  doi = {10.1145/1480881.1480925},
+  pages = {340--353},
+  title = {State-dependent representation independence},
 }
 
 @phdthesis{ahmed:2004,
@@ -4461,11 +4479,9 @@
 }
 
 @inproceedings{dreyer-neis-rossberg-birkedal:2010,
-  abstract = {The method of logical relations is a classic technique for proving the equivalence of higher-order programs that implement the same observable behavior but employ different internal data representations. Although it was originally studied for pure, strongly normalizing languages like System F, it has been extended over the past two decades to reason about increasingly realistic languages. In particular, Appel and McAllester's idea of step-indexing has been used recently to develop syntactic Kripke logical relations for ML-like languages that mix functional and imperative forms of data abstraction. However, while step-indexed models are powerful tools, reasoning with them directly is quite painful, as one is forced to engage in tedious step-index arithmetic to derive even simple results.In this paper, we propose a logic LADR for equational reasoning about higher-order programs in the presence of existential type abstraction, general recursive types, and higher-order mutable state. LADR exhibits a novel synthesis of features from Plotkin-Abadi logic, G\"{o}del-L\"{o}b logic, S4 modal logic, and relational separation logic. Our model of LADR is based on Ahmed, Dreyer, and Rossberg's state-of-the-art step-indexed Kripke logical relation, which was designed to facilitate proofs of representation independence for "state-dependent" ADTs. LADR enables one to express such proofs at a much higher level, without counting steps or reasoning about the subtle, step-stratified construction of possible worlds.},
   author = {Dreyer, Derek and Neis, Georg and Rossberg, Andreas and Birkedal, Lars},
   address = {Madrid, Spain},
   publisher = acm,
-  url = {https://doi.org/10.1145/1706299.1706323},
   booktitle = {Proceedings of the 37th Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
   year = {2010},
   doi = {10.1145/1706299.1706323},
