@@ -37,6 +37,8 @@ for line in old_db.readlines():
         new_db.write(line.replace("@online","@unpublished"))
     elif re.search("@report",line):
         new_db.write(line.replace("@report","@techreport"))
+    elif re.search("@software",line):
+        new_db.write(line.replace("@software","@misc"))
     else:
       new_db.write(line)
 old_db.close()
